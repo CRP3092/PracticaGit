@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container-form register hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>BIENVENIDO</h2>
+                <p>Para registrarse a nuestra comunidad por favor, añada los datos que necesitas para crear una cuenta</p>
+                <input type="button" value="Volver Atrás" id="signin">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>CREAR UNA CUENTA</h2>
+                <div class="icons">
+                    <i class='bx bxl-google-plus'></i>
+                    <i class='bx bxl-linkedin'></i>
+                    <i class='bx bxl-github' ></i>
+                </div>
+                <p>O usa tu email para registrarte</p>
+                <form class="register-form" id="register-form">
+                    <label>
+                        <i class='bx bxs-envelope' ></i>
+                        <input type="email" placeholder="Correo Electrónico" required>
+                    </label>
+                    <label>
+                        <i class='bx bxs-lock-open-alt'></i>
+                        <input type="password" placeholder="Contraseña" id="pass" required>
+                        <i class='bx bx-show-alt' id="showpass1"></i>
+                    </label>
+                    <label>
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" placeholder="Confirmar Contraseña" id="confirmPass" required>
+                        <i class='bx bx-show-alt' id="showpass2"></i>
+                    </label>
+                    <input type="submit" value="Registrarse" id="btnregister">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-form login">
+        <div class="information">
+            <div class="info-childs">
+                <h2>BIENVENIDO USUARIO </h2>
+                <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                <input type="button" value="Registrarse" id="signup">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-google-plus'></i>
+                    <i class='bx bxl-linkedin'></i>
+                    <i class='bx bxl-github' ></i>
+                </div>
+                <p>O inicia sesión con tu cuenta</p>
+                <form class="form" id="login-form">
+                    <label>
+                        <i class='bx bxs-envelope' ></i>
+                        <input type="email" placeholder="Correo Electrónico" required>
+                    </label>
+                    <label>
+                        <i class='bx bxs-lock-open-alt' ></i>
+                        <input type="password" placeholder="Contraseña" required>
+                    </label>
+                    <input type="submit" value="Iniciar Sesion" id="btnlogin">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
